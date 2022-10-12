@@ -21,7 +21,7 @@ while True:
         print("Oops. Invalid input. Please enter a single alpabet")
         
 
-    'Checks if input letter is in word'
+    'Checks if input letter is in the word from the list'
     if guess in word:
         print(f"Good. {guess} is in the word.")
     else:
