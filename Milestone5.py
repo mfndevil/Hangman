@@ -51,6 +51,10 @@ class Hangman():
             print(f"Oops! Incorrect guess!")
             print(f"You have {self.num_lives} lives left")
 
+            if self.num_lives == 0:
+                print("You've run out of lives. Game Over!")
+                exit()
+
         # Add guess to the list of guesses
         # self.check_guess(guess)
         self.list_of_guesses += guess
@@ -79,5 +83,5 @@ class Hangman():
             self.check_guess(guess)
             # break
 
-game = Hangman(word_list= words, num_lives= 5)
-game.ask_for_input()
+play = Hangman(word_list= words, num_lives= 5)
+play.ask_for_input()
